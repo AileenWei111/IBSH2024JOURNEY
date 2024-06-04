@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+body {
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    overflow: auto; /* Allow the body to scroll */
+}
+
+.outer-container {
+    position: relative;
+    background-color: #6AC5FC;
+    border: 5px solid #4D95C1;
+    border-radius: 20px;
+    padding: 20px;
+    width: 90%;
+    max-width: 800px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-y: auto; /* Enable vertical scrolling for the outer container */
+    height: auto; /* Allow the container to expand dynamically based on content */
+}
+
+.container {
+    text-align: center;
+    width: 100%;
+}
+
+.title-box {
+    background-color: #f0f0f0;
+    border-radius: 15px;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 2px solid #4D95C1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.title-box h1 {
+    color: black;
+    font-family: 'Pacifico', cursive;
+    font-size: 2.5em;
+    margin: 0;
+}
+
+.graduation-hat {
+    width: 100px;
+    height: 100px;
+}
+
+.video-container {
+    margin: 20px 0;
+}
+
+.names {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.name-box {
+    padding: 10px;
+    border-radius: 15px;
+    cursor: pointer;
+    text-align: center;
+    width: 120px;
+    transition: transform 0.3s;
+    border: 2px solid #4D95C1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.name-box:hover {
+    transform: scale(1.1);
+}
+
+.name-drawing {
+    width: 20px;
+    height: 20px;
+}
+
+.name {
+    font-family: 'Pacifico', cursive;
+}
+
+.pastel-purple { color: #C39BD3; }
+.pastel-orange { color: #F5B041; }
+.pastel-blue { color: #85C1E9; }
+.pastel-yellow { color: #F7DC6F; }
+.pastel-black { color: #5D6D7E; }
+.pastel-pink { color: #F1948A; }
+.pastel-green { color: #82E0AA; }
+
+.pastel-purple-bg { background-color: #E8DAEF; }
+.pastel-orange-bg { background-color: #FAD7A0; }
+.pastel-blue-bg { background-color: #D6EAF8; }
+.pastel-yellow-bg { background-color: #FCF3CF; }
+.pastel-black-bg { background-color: #D5DBDB; }
+.pastel-pink-bg { background-color: #F9E7E7; }
+.pastel-green-bg { background-color: #D5F5E3; }
+
+.side-image {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 150px;
+}
+
+.left-image { 
+    left: 50px; /* Adjust to ensure the image is inside the container */
+}
+
+.right-image { 
+    right: 50px; /* Adjust to ensure the image is inside the container */
+}
+
+.side-image img {
+    width: 100%;
+    height: auto;
+}
+
+.personalized-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    text-align: center;
+    gap: 20px;
+    overflow-y: auto; /* Enable vertical scrolling for the personalized container */
+    height: auto; /* Allow the container to expand dynamically based on content */
+}
+
+.personalized-box {
+    width: 80%;
+    max-width: 600px;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    overflow-y: auto; /* Enable scrolling within the box */
+    max-height: calc(80vh - 40px); /* 80% of viewport height minus padding */
+}
+
+.pastel-orange-bg { background-color: #FAD7A0; }
+.pastel-purple-bg { background-color: #E8DAEF; }
+
+.pastel-orange { color: #F5B041; }
+.pastel-purple { color: #C39BD3; }
+
+.personalized-box h2 {
+    margin: 0;
+    font-size: 2em;
+}
+
+.personalized-box img {
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+}
+.message-text {
+    color: inherit; /* This inherits the color from the parent element */
+}
+/* Other existing styles remain unchanged */
